@@ -2,18 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import Founder from "./Founder";
 import Menu from "./Menu";
-
 const Home = () => {
     const options = {
         initial: {
-            x: "-100%",
+            x: "-100% ",
             opacity: 0,
         },
         whileInView: {
             x: 0,
-            opacity: 1,
-        },
-    };
+            opacity: 1
+        }
+    }
+
     return (
         <>
             <section className="home">
@@ -22,7 +22,8 @@ const Home = () => {
                     <motion.p
                         {...options}
                         transition={{
-                            delay: 0.2,
+
+                            delay: 0.2
                         }}
                     >
                         Regálate una sabrosa hamburguesa.
@@ -41,8 +42,8 @@ const Home = () => {
                         }}
                     transition={
                         {
-                            delay:
-                                0.4,
+                            delay: 0.4,
+
                         }}
                 >
                     Explorar el menú
